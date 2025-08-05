@@ -21,7 +21,7 @@
 
   @include('sections.header.header')
 
-  {{-- HERO YOUTUBE VIDEO (larger) --}}
+  {{-- HERO YOUTUBE VIDE (larger) --}}
   <section class="bg-brand-white">
     <div class="container mx-auto px-4 py-10">
       <div class="max-w-5xl mx-auto">
