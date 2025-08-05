@@ -11,9 +11,9 @@
             {{ __('problem.subtitle') }}
         </p>
 
-        {{-- 4-COLUMN GRID (10 cards) --}}
+        {{-- 4-COLUMN GRID (4 cards) --}}
         <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-6 place-items-stretch">
-            @foreach(range(1,10) as $i)
+            @foreach(range(1,4) as $i)
                 <div
                     class="group flex flex-col items-center text-center
                            bg-white/70 backdrop-blur-md border border-brand-gold/30

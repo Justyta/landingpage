@@ -1,24 +1,28 @@
-@import "tailwindcss";
+@import 'tailwindcss/base';
+@import 'tailwindcss/components';
+@import 'tailwindcss/utilities';
 
-@theme {
-  --color-brand-white: #FFFFFF;
-  --color-brand-maroon: #421111;
-  --color-brand-gold: #C4AF7E;
-  --color-brand-green: #04502E;
-  --color-brand-cream: #F7F5F2;
-  --color-brand-charcoal: #2B0B0B;
-  --color-brand-lime: #6BBF6B;
-  --color-brand-beige: #EADDC4;
-  --color-brand-teal: #0A4D4D;
-  
-  --font-family-sans: "Instrument Sans", ui-sans-serif, system-ui, sans-serif;
+/* Custom CSS Variables */
+:root {
+    /* Brand palette */
+    --color-brand-white: #1C1814;      /* Dark earthy base background */
+  --color-brand-maroon: #5B3A29;     /* Warm brown background and text */
+  --color-brand-gold: #D4AF37;       /* Gold accent & glow */
+  --color-brand-green: #2F6B3E;      /* Primary CTA button base */
+  --color-brand-cream: #F6F1E9;      /* Text color on dark bg */
+  --color-brand-charcoal: #2A231B;   /* Card background */
+  --color-brand-lime: #94E49B;       /* Hover & focus glow for buttons */
+  --color-brand-beige: #E5DCC6;      /* Section backgrounds */
+  --color-brand-teal: #3A756D; 
 }
 
 /* Base styles */
-h1, h2, h3, h4, h5, h6 {
-  color: var(--color-brand-maroon);
-}
-
-body {
-  font-family: var(--font-family-sans);
+@layer base {
+    h1, h2, h3, h4, h5, h6 {
+        color: var(--color-brand-maroon);
+    }
+    
+    body {
+        font-family: 'Instrument Sans', ui-sans-serif, system-ui, sans-serif;
+    }
 }
